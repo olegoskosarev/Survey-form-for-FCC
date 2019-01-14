@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <img src="https://lmndeit.kg/wp-content/uploads/2017/01/workflow.jpg" alt="front-end">
+    </header>
+    
+    <main>
+        <h1 id="title">Survey Form for Front-End Developers</h1>
+        <p id="description">Let us know more about you</p>
+        <form id="survey-form">
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="name-label" for="name">* Name: </label>
+                </div>
+                <div class="rightTab">
+                    <input type="text" autofocus name="name" id="name" class="input-field" placeholder="Enter your Name" required>
+                </div>
+            </div>
+
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="number-label" for="number">* Age: </label>
+                </div>
+                <div class="rightTab">
+                    <input type="number" autofocus name="number" id="number" class="input-field" min="1" max="100" placeholder="Age" required>
+                </div>
+            </div>
+
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="company-label" for="company">* Company: </label>
+                </div>
+                <div class="rightTab">
+                    <input type="text" autofocus name="company" id="company" class="input-field" placeholder="Company" required>
+                </div>
+            </div>
+
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="email-label" for="email">* Email: </label>
+                </div>
+                <div class="rightTab">
+                    <input type="email" autofocus name="email" id="email" class="input-field" placeholder="Email" required>
+                </div>
+            </div>
+
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="phone-label" for="number">* Phone: </label>
+                </div>
+                <div class="rightTab">
+                    <input type="tel" autofocus name="phobe" id="phone" class="input-field" placeholder="Phone number" required>
+                </div>
+            </div>
+
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="dropdown-label" for="dropdown">Which option best describes your current role? </label>
+                </div>
+                <div class="rightTab">
+                    <select name="dropdown" id="dropdown">
+                        <option disabled value>Select an option</option>
+                        <option value="1">Student</option>
+                        <option value="2">Full Time Job</option>
+                        <option value="3">Full Time Learner</option>
+                        <option value="4">Prefer not to say</option>
+                        <option value="5">Other</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="rowTab">
+                <div id="source" class="labels">
+                    <label id="source-label" for="source">Do you want to get job in our company? </label>
+                </div>
+                <div class="rightTab">
+                    <ul style="list-style: none;">
+                        <li class="radio">
+                            <label><input name="radio-buttons" value="1"  type="radio">Definitely</label>
+                        </li>
+                        <li class="radio">
+                            <label><input name="radio-buttons" value="2"  type="radio">Maybe</label>
+                        </li>
+                        <li class="radio">
+                            <label><input name="radio-buttons" value="3"  type="radio">Not sure</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="git-label" for="git"> GitHub: </label>
+                </div>
+                <div class="rightTab">
+                    <input type="text" autofocus name="git" id="git" class="input-field" placeholder="Username">
+                </div>
+            </div>
+
+            <div class="rowTab">
+                <div id="tech" class="labels">
+                    <label id="tech-label" for="preferences"> Languages and Technologies<br>(Check all that apply): </label>
+                </div>
+                <div class="rightTab">
+                    <ul id="preferences" style="list-style: none;">
+                        <li class="checkbox">
+                            <label><input name="prefer" value="1" type="checkbox">HTML</label>
+                        </li>
+                        <li class="checkbox">
+                            <label><input name="prefer" value="2" type="checkbox">CSS</label>
+                        </li>
+                        <li class="checkbox">
+                            <label><input name="prefer" value="3" type="checkbox">JavaScript</label>
+                        </li>
+                        <li class="checkbox">
+                            <label><input name="prefer" value="4" type="checkbox">jQuery</label>
+                        </li>
+                        <li class="checkbox">
+                            <label><input name="prefer" value="5" type="checkbox">TypeScript</label>
+                        </li>
+                        <li class="checkbox">
+                            <label><input name="prefer" value="6" type="checkbox">React</label>
+                        </li>
+                        <li class="checkbox">
+                            <label><input name="prefer" value="7" type="checkbox">Angular</label>
+                        </li>
+                        <li class="checkbox">
+                            <label><input name="prefer" value="8" type="checkbox">Git</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="rowTab">
+                <div id="comment" class="labels">
+                    <label id="comment-label" for="comments"> Text some about yourself:</label>
+                </div>
+                <div class="rightTab">
+                    <textarea id="comments" class="input-field" name="comment" placeholder="Enter here..."></textarea>
+                </div>
+            </div>
+
+            <button id="submit" type="submit">Submit</button>
+
+        </form>
+    </main>
+</body>
+</html>
